@@ -100,3 +100,4 @@ This project is for educational purposes. Its similarity percentage should not b
 ## Sample Output
 
 ![Genome Sequence Alignment Tool Output](Screenshot%202026-10-27%20115357.png)
+https://25A31A05HG.github.io/genome-sequence-alignment-tool/
