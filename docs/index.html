@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compare DNA sequences using the Longest Common Subsequence algorithm.">
+    <title>Genome Sequence Alignment Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <span class="brand-icon">🧬</span>
+            <span>GenomeAlign</span>
+        </div>
+        <a href="#about" class="header-link">About Project</a>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <p class="eyebrow">C++ PROJECT · SDG 3</p>
+            <h1>Genome Sequence<br><span>Alignment Tool</span></h1>
+            <p class="hero-description">
+                Compare DNA sequences and discover their longest common
+                subsequence using dynamic programming.
+            </p>
+        </section>
+
+        <section class="tool-card" aria-labelledby="tool-heading">
+            <div class="card-heading">
+                <div>
+                    <h2 id="tool-heading">DNA Sequence Analyzer</h2>
+                    <p>Enter two sequences using A, T, G and C.</p>
+                </div>
+                <span class="status-badge">Ready to analyze</span>
+            </div>
+
+            <form id="alignment-form">
+                <div class="input-grid">
+                    <div class="field">
+                        <label for="sequence1">First DNA sequence</label>
+                        <textarea id="sequence1" rows="3"
+                            placeholder="Example: AGGTAC"
+                            maxlength="500" required></textarea>
+                        <small>Sequence 1</small>
+                    </div>
+
+                    <div class="field">
+                        <label for="sequence2">Second DNA sequence</label>
+                        <textarea id="sequence2" rows="3"
+                            placeholder="Example: GGTACC"
+                            maxlength="500" required></textarea>
+                        <small>Sequence 2</small>
+                    </div>
+                </div>
+
+                <div class="button-row">
+                    <button type="submit" class="primary-button">
+                        Align Sequences
+                    </button>
+                    <button type="button" id="sample-button" class="secondary-button">
+                        Try Sample
+                    </button>
+                    <button type="reset" class="secondary-button">
+                        Clear
+                    </button>
+                </div>
+            </form>
+
+            <p id="message" class="message" role="status" aria-live="polite"></p>
+
+            <section id="results" class="results" hidden aria-labelledby="results-heading">
+                <h2 id="results-heading">Alignment Results</h2>
+
+                <div class="result-highlight">
+                    <p>Longest Common Subsequence (LCS)</p>
+                    <output id="lcs-result" class="lcs-value">—</output>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat">
+                        <span>LCS Length</span>
+                        <strong id="length-result">0</strong>
+                    </div>
+                    <div class="stat">
+                        <span>Similarity</span>
+                        <strong id="similarity-result">0%</strong>
+                    </div>
+                </div>
+
+                <p class="formula">
+                    Similarity = LCS length ÷ length of the longer sequence × 100
+                </p>
+            </section>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About This Project</h2>
+            <p>
+                This educational project uses the Longest Common Subsequence
+                (LCS) algorithm and dynamic programming to compare two DNA
+                sequences. It demonstrates how sequence comparison can be
+                explored through computer science.
+            </p>
+
+            <div class="feature-grid">
+                <article class="feature">
+                    <span>01</span>
+                    <h3>Sequence Validation</h3>
+                    <p>Accepts DNA bases A, T, G and C.</p>
+                </article>
+                <article class="feature">
+                    <span>02</span>
+                    <h3>Dynamic Programming</h3>
+                    <p>Builds a table to find the LCS efficiently.</p>
+                </article>
+                <article class="feature">
+                    <span>03</span>
+                    <h3>Clear Results</h3>
+                    <p>Displays the common subsequence, length and similarity.</p>
+                </article>
+            </div>
+
+            <p class="disclaimer">
+                Educational demonstration only. This tool is not intended
+                for medical diagnosis or clinical decision-making.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Genome Sequence Alignment Tool · C++ Project · SDG 3: Good Health and Well-being</p>
+    </footer>
+</body>
+</html>
