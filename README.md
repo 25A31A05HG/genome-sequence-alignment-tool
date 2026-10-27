@@ -97,3 +97,6 @@ team E12
 
 ## Disclaimer
 This project is for educational purposes. Its similarity percentage should not be used as a medical or diagnostic result.
+## Sample Output
+
+![Genome Sequence Alignment Tool Output](Screenshot%202026-10-27%20115357.png)
